@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    
+    height: 100%;
+    background-image: url('files/img/fon.png');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.5rem;
+    text-align: center  ;
+
+  }
+  @font-face {
+    font-family: 'Pobeda';
+    src: url('files/fonts/Pobeda-Bold.woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .header{
+    display: block;
+    
+    height: 100px;
+    overflow: hidden;
+    background-image: url('files/img/header.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  header{background-color: rgb(220,51,44);
+    margin:0;}
+    .header-text{
+        display: block;
+    }
+.header-logo{
+    width: 100%;
+    display: flex;
+}
+.header-text{
+    font-family:Pobeda;
+    display: flex;
+    justify-content: center;
+    margin:  0 20px;
+    font-size: 32px;
+    overflow: hidden;
+}
+.header-text p{
+    margin:auto;
+}
+
+
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.forma {
+  background-color: rgba(227, 29, 95, 0.229);
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex: 1;
+}
+.input:focus {
+  outline: none;
+}
+.add-text {
+  border: none;
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration:none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.add-text:hover {
+  background-color: #b5241a;
+}
+ @media  (max-width:767px) {
+  .forma{
+    flex-direction: column;
+  }
+  .add-text{
+    margin-top:20px ;
+  }
+  .input{
+    width:100%;
+  }
+ }
+
+
+ .task {
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.229);
+  padding: 10px;
+  border-radius: 6px;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  word-break: break-all;
+  display: block;
+}
+.task:not(:last-child) {
+  margin-bottom: 25px;
+}
+.task:hover {
+  background-color: #f7f7f7;
+  background-color: rgba(255, 255, 255, 0.542);
+}
+
+.task span {
+  font-weight: bold;
+  font-size: 18px;
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 7px;
+  margin-bottom: 10px;
+  float: right;
+  display: block;
+  white-space: nowrap;
+}
+.done{
+  background-color: #1ab52c;
+  background-color: #1ab52c94;
+  text-decoration: line-through;
+}
+.done:hover{
+  background-color: #1ab52c;
+  background-color: #1ab52cdc;
+}
+.pult{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto;
+  flex-wrap: wrap;
+}
+
+.pult-btn{
+  font-size: 26px;
+  border-radius: 20px;
+  color: #FFF;
+  background-color: rgb(158, 6, 87);
+}
+.select{
+  
+  box-shadow: 0 0 5px 5px #bae048,
+              0 0 2px 2px #ebecca,
+              0 0 2px 2px #8400ff,
+              0 0 3px 2px #ff0088;
+}
